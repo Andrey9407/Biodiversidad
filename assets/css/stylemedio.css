@@ -1,0 +1,207 @@
+/**
+ Autor:Andrey Mahecha
+ Hoja de estilo del proyecto curso de programación a nivel explorador
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url(../img/bannermovil.png);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    margin: 25%;
+    color: #0f0e0e;
+    font-size: 3em;
+    text-align: center;
+}
+
+nav {
+    background-color: #073f09;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+#menu,
+#labelmenu {
+    display: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em 0 0;
+}
+
+nav li:hover {
+    background-color: #4CAF50;
+    padding: 25px;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 20px solid white;
+}
+
+section {
+    margin: 2em;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.video {
+    width: 100%;
+    height: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+article {
+    margin: 0 10% 0 10%;
+}
+
+.imagen {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #073f09;
+    color: #fff;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.cajafooter {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 30px;
+    color: #073f09;
+    margin: -60px 5% 0 5%;
+    font-size: 1.5em;
+}
+
+footer p {
+    text-align: center;
+}
+
+.linkfooter {
+    margin: 50px 0 50px 0;
+}
+
+.logo {
+    width: 32%;
+    text-align: center;
+}
+
+footer a {
+    color: #073f09;
+    margin-right: 10px;
+}
+
+.galeria {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria .imagen {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    margin-top: 10px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #073f09;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #45a049;
+}
+
+/***********************Mapa Interactivo*************************************/
+.titulomapa {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#cajamapa {
+    display: flex;
+    margin: 0 2% 0 2%;
+}
+
+#mapa {
+    width: 25%;
+    margin-right: 25%;
+    text-align: center;
+}
+
+#inforegion {
+    width: 50%;
+}
+
+#mapamovil {
+    display: none;
+}

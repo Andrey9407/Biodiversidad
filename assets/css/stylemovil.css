@@ -1,0 +1,225 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-image: url(../img/bannermovil.PNG);
+    /**cambiado a movil**/
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    margin: 55% 0 0 0;
+    /**cambiado a movil***/
+    color: #ffffff;
+    /**cambiado a movil***/
+    font-size: 2em;
+    /**cambado a movil***/
+
+}
+
+/***************************Navbar Movil*****************************************/
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1em 0 0;
+}
+
+ul {
+    display: none;
+    margin-top: 0;
+    padding: 0;
+    width: 95%;
+    margin: 0 2.5% 0 2.5%;
+}
+
+li {
+    display: block;
+    background-color: #073f09;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+nav li:hover {
+    background-color: #4CAF50;
+}
+
+/*hermanos generales*/
+#menu:checked~nav ul {
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+#labelmenu {
+    margin: 10px 0 0 10px;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    /**1em 16px**/
+    color: #073f09;
+    user-select: none;
+}
+
+/**********************************************************************************/
+section {
+    margin: 1em;
+    /**cambio a movil**/
+    padding: 0.5em;
+    /**cambio a movil**/
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.video {
+    width: 100%;
+    height: 300px;
+    /****cambio a movil****/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+article {
+    margin: 0 10% 0 10%;
+}
+
+.imagen {
+    width: 100%;
+    height: 250px;
+    /**agrego a etiqueta para cambio a movil**/
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #073f09;
+    color: #fff;
+    height: 380px;
+    /**cambio a movil**/
+    margin-top: 100px;
+}
+
+.cajafooter {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 30px;
+    color: #073f09;
+    margin: -60px 5% 0 5%;
+    font-size: 1em;
+    /**cambio a movil***/
+}
+
+footer p {
+    text-align: center;
+}
+
+.linkfooter {
+    margin: 2% 4% 15% 0;
+    /**cambio a movil**/
+    display: inline-grid;
+    /**cambio a movil**/
+}
+
+.logo {
+    margin-top: 10px;
+    /**cambio a movil**/
+    width: 100%;
+    /**cambio a movil**/
+    text-align: center;
+}
+
+footer a {
+    color: #073f09;
+}
+
+.galeria {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria .imagen {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.galeria .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contacto label {
+    margin-top: 10px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario-contacto button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #073f09;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-contacto button:hover {
+    background-color: #45a049;
+}
+
+/***********************Mapa Interactivo*************************************/
+#mapaweb {
+    display: none;
+}

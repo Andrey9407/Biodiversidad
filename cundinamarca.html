@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodiversidad Cundinamarca</title>
+    <!-- <link rel="stylesheet" href="assets/css/style.css">-->
+    <style>
+        @import url("assets/css/style.css") screen and (min-width:1024px);
+        @import url("assets/css/stylemovil.css") screen and (max-width:600px);
+        @import url("assets/css/stylemedio.css") screen and (max-width:1023px) and (min-width:601px);
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Biodiversidad de Cundinamarca</h1>
+    </header>
+    <input type="checkbox" id="menu">
+    <label for="menu" id="labelmenu">☰</label>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="#flora">Flora</a>
+            </li>
+            <li>
+                <a href="#fauna">Fauna</a>
+            </li>
+            <li><a href="#ecosistema">Ecosistema</a></li>
+            <li>
+                <a href="#conservacion">Conservacion</a>
+            </li>
+            <li>
+                <a href="https://colab.research.google.com/drive/11pOWWLZHX-M7aDYfemLcslV4Z4jfpaKn?usp=sharing" target="_blank">Biodiversidad</a>
+            </li>
+            <li>
+                <a href="#contacto">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="introduccion">
+        <article>
+            <h2>Introducción</h2>
+            <p>Cundinamarca, ubicada en el centro de Colombia, es una región rica en biodiversidad gracias a su variada
+                topografía y clima, que van desde cálidos valles hasta frías montañas andinas. Esta diversidad de
+                condiciones ambientales permite la existencia de una amplia gama de ecosistemas que albergan numerosas
+                especies de flora y fauna. Los bosques andinos, presentes en las zonas más elevadas, son hogar de una
+                gran variedad de plantas endémicas y especies animales. Entre las plantas, destacan diversas orquídeas y
+                bromelias que embellecen el paisaje con sus colores vibrantes. Los mamíferos como el puma (Puma
+                concolor), el venado de cola blanca (Odocoileus virginianus) y el oso de anteojos (Tremarctos ornatus)
+                también se encuentran en estos bosques, aunque sus poblaciones están amenazadas por la deforestación y
+                la expansión urbana.</p>
+            <img class="imagen" src="assets/img/cundinamarca.png">
+            <p>
+                Las aves constituyen una parte significativa de la biodiversidad de Cundinamarca. Con más de 600
+                especies registradas, la región es un paraíso para los observadores de aves. Entre las especies más
+                notables se encuentran el cóndor de los Andes (Vultur gryphus), el águila paramuna (Geranoaetus
+                melanoleucus) y el tucán esmeralda (Aulacorhynchus prasinus). Además, los ríos y cuerpos de agua de
+                Cundinamarca, como el río Magdalena, sustentan una rica variedad de peces, anfibios y reptiles, muchos
+                de los cuales son endémicos de la región. Los humedales y lagunas, como el Humedal La Conejera y la
+                Laguna de Fúquene, son cruciales para la biodiversidad local, proporcionando hábitats para aves
+                migratorias y especies acuáticas. La riqueza biológica de Cundinamarca no solo es un tesoro natural,
+                sino también un recurso esencial para el bienestar ecológico y económico de la región, subrayando la
+                importancia de su conservación y manejo sostenible.
+            </p>
+        </article>
+    </section>
+    <section>
+        <article class="mapainteractivo">
+            <h2 id="titulomapa" class="titulomapa">Mapa Interactivo de Cundinamarca</h2>
+            <div id="cajamapa">
+                <div id="mapa">
+                    <img id="mapaweb" src="assets/img/mapa/mapacundinamarca.png" alt="mapacundinamarca"
+                        usemap="#mapcund">
+                    <map name="mapcund">
+                        <area shape="rect" coords="261,247,370,311" onmouseover="eventoguavio()">
+                        <area shape="rect" coords="219,191,247,253" onmouseover="sabanacentro()">
+                        <area shape="rect" coords="247,118,300,163" onmouseover="ubate()">
+                        <area shape="rect" coords="65,33,96,200" onmouseover="bajoMagdalena()">
+                        <area shape="rect" coords="110,43,219,162" onmouseover="rionegro()">
+                        <area shape="rect" coords="104,167,166,248" onmouseover="gualiva()">
+                        <area shape="rect" coords="291,179,354,221" onmouseover="almeidas()">
+                        <area shape="rect" coords="36,239,77,297" onmouseover="magdalenaCentro()">
+                        <area shape="rect" coords="137,261,183,311" onmouseover="sabanaOccidente()">
+                        <area shape="rect" coords="28,335,72,419" onmouseover="altoMagdalena()">
+                        <area shape="rect" coords="80,291,123,367" onmouseover="tequendama()">
+                        <area shape="rect" coords="118,380,155,509" onmouseover="sumapaz()">
+                        <area shape="rect" coords="161,328,181,376" onmouseover="soacha()">
+                        <area shape="rect" coords="221,336,287,435" onmouseover="oriente()">
+                        <area shape="rect" coords="360,329,462,413" onmouseover="medina()">
+                    </map>
+                    <img id="mapamovil" src="assets/img/mapa/mapacundinamarcamovil.png" alt="mapacundinamarcamovil"
+                        usemap="#mapcundmovil">
+                    <map name="mapcundmovil">
+                        <area shape="rect" coords="192,176,262,229" onmouseover="eventoguavio()">
+                        <area shape="rect" coords="162,139,181,183" onmouseover="sabanacentro()">
+                        <area shape="rect" coords="181,91,218,115" onmouseover="ubate()">
+                        <area shape="rect" coords="48,24,63,159" onmouseover="bajoMagdalena()">
+                        <area shape="rect" coords="92,19,161,117" onmouseover="rionegro()">
+                        <area shape="rect" coords="76,128,122,172" onmouseover="gualiva()">
+                        <area shape="rect" coords="216,126,257,161" onmouseover="almeidas()">
+                        <area shape="rect" coords="28,172,59,215" onmouseover="magdalenaCentro()">
+                        <area shape="rect" coords="96,189,139,222" onmouseover="sabanaOccidente()">
+                        <area shape="rect" coords="20,242,50,301" onmouseover="altoMagdalena()">
+                        <area shape="rect" coords="61,211,92,261" onmouseover="tequendama()">
+                        <area shape="rect" coords="87,277,109,373" onmouseover="sumapaz()">
+                        <area shape="rect" coords="115,242,129,270" onmouseover="soacha()">
+                        <area shape="rect" coords="166,244,214,314" onmouseover="oriente()">
+                        <area shape="rect" coords="260,240,332,296" onmouseover="medina()">
+                    </map>
+
+                </div>
+                <div id="inforegion">
+                    <h2 id="tituloregion" class="titulomapa">Region Cundinamarca</h2>
+                    <img class="imagen" id="imagenregion" src="assets/img/region/cundinamarca.png" alt="cundinamarca">
+                    <p id="info">Cundinamarca es un departamento ubicado en el centro de Colombia, rodeando en gran
+                        parte a la capital del país, Bogotá. Es conocido por su diversidad geográfica, que incluye
+                        montañas, valles y páramos, lo que le confiere un clima variado y paisajes espectaculares. La
+                        región es rica en historia y cultura, con pueblos coloniales como Zipaquirá, famoso por su
+                        Catedral de Sal, y Fusagasugá, conocido por sus hermosos jardines y cultivos de flores. La
+                        economía de Cundinamarca se basa en la agricultura, especialmente en el cultivo de flores,
+                        frutas, y café, así como en la ganadería y el turismo.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="flora">
+        <article>
+            <h2>Flora</h2>
+            <p>La flora de Cundinamarca es notablemente diversa, reflejando la variedad de ecosistemas y climas
+                presentes en esta región central de Colombia. Los bosques andinos, que se encuentran en las zonas más
+                elevadas, son particularmente ricos en especies vegetales. En estos bosques, las orquídeas son
+                especialmente destacadas, con numerosas especies endémicas que aportan una espectacular diversidad de
+                formas y colores. Entre ellas se encuentran la Cattleya trianae, la orquídea nacional de Colombia, y la
+                Epidendrum ibaguense. Además, los bosques andinos albergan una gran variedad de bromelias, helechos
+                arborescentes y musgos, que contribuyen a la complejidad y belleza del ecosistema.
+
+                En las zonas más bajas y cálidas de Cundinamarca, la vegetación cambia dramáticamente, adaptándose a
+                condiciones de mayor temperatura y menor humedad. Aquí, se pueden encontrar árboles como el ceibo (Ceiba
+                pentandra) y el samán (Samanea saman), que son típicos de los bosques secos tropicales. La región
+                también es conocida por sus numerosas especies de palmas, como la palma de cera (Ceroxylon quindiuense),
+                que es la palma nacional de Colombia y se encuentra en peligro de extinción debido a la deforestación y
+                la extracción ilegal.</p>
+            <div class="galeria">
+                <div class="imagen">
+                    <img src="assets/img/flora1.png" alt="Imagen 1">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/flora2.png" alt="Imagen 2">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/flora3.png" alt="Imagen 3">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/flora4.png" alt="Imagen 4">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/flora5.png" alt="Imagen 5">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/flora6.png" alt="Imagen 6">
+                </div>
+            </div>
+            <p>
+                Los humedales y lagunas de Cundinamarca, como el Humedal La Conejera y la Laguna de Fúquene, son otros
+                importantes reservorios de flora. Estos ecosistemas acuáticos albergan una variedad de plantas
+                hidrófitas, como la Totora (Schoenoplectus californicus) y el Junco (Juncus spp.), que desempeñan un
+                papel crucial en la filtración del agua y el mantenimiento de la biodiversidad local. Además, estas
+                áreas son vitales para la reproducción y supervivencia de muchas especies de aves y otros animales.
+
+                La flora de Cundinamarca, con su impresionante variedad y adaptabilidad, no solo enriquece el paisaje
+                natural, sino que también sustenta la vida silvestre y proporciona importantes servicios ecosistémicos a
+                la región. La conservación de esta diversidad vegetal es fundamental para mantener el equilibrio
+                ecológico y promover la sostenibilidad ambiental en Cundinamarca.
+            </p>
+        </article>
+    </section>
+    <section id="fauna">
+        <article>
+            <h2>Fauna</h2>
+            <p>La fauna de Cundinamarca es igualmente diversa y rica, gracias a la variedad de ecosistemas presentes en
+                esta región central de Colombia. Los bosques andinos y páramos de Cundinamarca son hogar de numerosos
+                mamíferos, aves, reptiles y anfibios que se han adaptado a las diferentes condiciones climáticas y
+                geográficas. Entre los mamíferos más destacados se encuentra el oso de anteojos (Tremarctos ornatus),
+                una especie vulnerable que habita en los bosques de niebla y páramos de alta montaña. También se pueden
+                encontrar el venado de cola blanca (Odocoileus virginianus), el puma (Puma concolor) y diversas especies
+                de pequeños mamíferos como ardillas y marsupiales.
+
+                La avifauna de Cundinamarca es particularmente notable, con más de 600 especies de aves registradas en
+                la región. Entre las especies más emblemáticas se encuentran el cóndor de los Andes (Vultur gryphus), el
+                águila paramuna (Geranoaetus melanoleucus) y el tucán esmeralda (Aulacorhynchus prasinus). Los humedales
+                y lagunas, como el Humedal La Conejera y la Laguna de Fúquene, son vitales para las aves migratorias y
+                residentes, proporcionando hábitats esenciales para la alimentación, reproducción y descanso. Estas
+                áreas acuáticas también sustentan una variedad de aves acuáticas como garzas, patos y zambullidores.</p>
+            <iframe class="video" width="1236" height="695" src="https://www.youtube.com/embed/CRDYJg2wzoI"
+                title="🦥💚 CAV de Fauna CAR: centro de la esperanza para los animales silvestres" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                Los reptiles y anfibios de Cundinamarca también muestran una notable diversidad. Entre los reptiles, se
+                pueden encontrar especies como la iguana (Iguana iguana), diversas especies de serpientes, y lagartos.
+                Los anfibios, incluyendo ranas y sapos, son particularmente abundantes en los bosques húmedos y áreas
+                cercanas a cuerpos de agua. Muchas de estas especies son endémicas y algunas están en peligro debido a
+                la pérdida de hábitat y la contaminación ambiental.
+
+                Los cuerpos de agua de Cundinamarca, como los ríos Magdalena y Bogotá, y las lagunas de Fúquene y Tota,
+                albergan una rica diversidad de peces y otras formas de vida acuática. Estos ecosistemas acuáticos son
+                cruciales para la biodiversidad regional y también para las actividades económicas locales, como la
+                pesca.
+            </p>
+        </article>
+    </section>
+    <section id="ecosistema">
+        <article>
+            <h2>Ecosistema</h2>
+            <p>Cundinamarca es un departamento en el centro de Colombia que presenta una rica variedad de ecosistemas
+                debido a su topografía montañosa y su diversidad climática. En las regiones más altas, como la Sabana de
+                Bogotá y los alrededores de los páramos, se encuentran los bosques andinos. Estos bosques están
+                caracterizados por una vegetación exuberante y una rica biodiversidad. Entre las especies destacadas
+                están los frailejones, árboles como el pino nativo y una gran variedad de aves y mamíferos que han
+                adaptado sus vidas a estas condiciones montañosas.
+
+                En el corazón de Cundinamarca, los páramos son ecosistemas únicos que juegan un papel crucial en la
+                regulación del agua y la conservación de especies. El páramo de Sumapaz es uno de los más grandes y
+                significativos de Colombia. Estos ecosistemas se encuentran a gran altitud y se caracterizan por su
+                clima frío y húmedo. Las plantas de frailejón y las especies animales adaptadas a estas condiciones
+                extremas son comunes en esta región, y los páramos actúan como reservorios de agua, influyendo en los
+                patrones de precipitación y el suministro de agua para muchas áreas circundantes.</p>
+            <div class="galeria">
+                <div class="imagen">
+                    <img src="assets/img/eco1.png" alt="Imagen 1">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/eco2.png" alt="Imagen 2">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/eco3.png" alt="Imagen 3">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/eco4.png" alt="Imagen 4">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/eco5.png" alt="Imagen 5">
+                </div>
+                <div class="imagen">
+                    <img src="assets/img/eco6.png" alt="Imagen 6">
+                </div>
+            </div>
+            <p>
+                En zonas más húmedas y elevadas, los bosques de niebla se extienden cubiertos de musgos y epífitas.
+                Estos bosques reciben una gran cantidad de humedad a través de la condensación del aire, creando un
+                ambiente único que sustenta una diversidad especial de flora y fauna. La atmósfera constantemente húmeda
+                favorece el crecimiento de musgos, líquenes y plantas que requieren estas condiciones para prosperar.
+
+                Por otro lado, en áreas más bajas y con climas más cálidos, como en la región de la Sabana de Bogotá, se
+                pueden encontrar zonas de vegetación de sabana. Estas áreas presentan una vegetación menos densa y más
+                abierta en comparación con los bosques andinos y de niebla. La fauna de estas regiones incluye una
+                variedad de especies adaptadas a climas más cálidos y secos.
+
+                En conjunto, estos ecosistemas no solo contribuyen a la rica biodiversidad de Cundinamarca, sino que
+                también desempeñan roles ecológicos vitales, como la regulación del ciclo del agua y la provisión de
+                hábitats para numerosas especies.
+            </p>
+        </article>
+    </section>
+    <section id="conservacion">
+        <article>
+            <h2>Conservacion</h2>
+            <p>En Cundinamarca, la conservación de sus recursos naturales es esencial debido a la rica biodiversidad y
+                la variedad de ecosistemas presentes en la región. Una de las principales estrategias de conservación es
+                la creación y gestión de áreas protegidas, como el Parque Nacional Natural Sumapaz. Estas zonas están
+                destinadas a preservar los ecosistemas críticos, como los páramos y bosques andinos, garantizando la
+                protección de numerosas especies de flora y fauna, así como la regulación de los recursos hídricos.
+
+                Los programas de reforestación también juegan un papel crucial en la conservación de Cundinamarca. La
+                deforestación y la degradación de los bosques han llevado a esfuerzos significativos para restaurar las
+                áreas forestales mediante la siembra de especies nativas. Estos programas no solo ayudan a recuperar la
+                cubierta vegetal, sino que también mejoran la calidad del suelo y fomentan la biodiversidad en las áreas
+                reforestadas.</p>
+
+            <iframe class="video" width="1236" height="695" src="https://www.youtube.com/embed/rgjKcUatdIY"
+                title="Conservación ecoturística - TvAgro por Juan Gonzalo Angel Restrepo" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>La protección de los recursos hídricos es otro aspecto fundamental en la conservación de Cundinamarca.
+                Los páramos y bosques de niebla son vitales para la regulación del ciclo del agua, y por lo tanto, se
+                han implementado medidas para evitar la contaminación y el uso excesivo de estos recursos. Las
+                iniciativas para preservar estas fuentes de agua aseguran que se mantenga un suministro adecuado para
+                las comunidades y ecosistemas que dependen de ellas.
+
+                La educación ambiental y la participación comunitaria son esenciales para el éxito de las estrategias de
+                conservación en Cundinamarca. Se llevan a cabo programas de sensibilización para informar a la población
+                sobre la importancia de conservar el medio ambiente y se fomenta la participación activa de las
+                comunidades locales en la gestión de los recursos naturales. Además, la investigación científica y el
+                monitoreo continuo proporcionan datos valiosos que permiten ajustar las estrategias de conservación y
+                abordar los desafíos emergentes de manera efectiva.</p>
+        </article>
+    </section>
+    <section id="contacto">
+        <article>
+            <h2>Contacto</h2>
+            <p>Si requieres más información:</p>
+
+
+            <form method="post" class="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </section>
+    <footer>
+        <div class="cajafooter">
+            <p>&copy;2024 Biodiversidad de la Región. Todos los Derechos Reservados.</p>
+            <hr>
+            <div class="linkfooter">
+                <a href="https://talentotech.usergioarboleda.edu.co/" target="_blank">
+                    TalentoTech
+                </a><!--link a-->
+                <a href="https://www.usergioarboleda.edu.co/" target="_blank">
+                    Universidad Sergio Arboleda
+                </a><!--link a-->
+                <a href="https://www.mintic.gov.co/portal/inicio/" target="_blank">
+                    Ministerio de la TIC
+                </a><!--link a-->
+            </div><!--div linkfooter-->
+            <div class="cajaredsocial">
+                <a href="#"><img src="assets/img/iconfacebook.png" alt="iconfacebook"></a>
+                <a href="#"><img src="assets/img/iconinstagram.png" alt="iconinstragram"></a>
+                <a href="#"><img src="assets/img/iconyoutube.png" alt="iconyoutube"></a>
+            </div><!--caja red social-->
+            <div>
+                <img class="logo" src="assets/img/logo.png" alt="logo">
+            </div>
+        </div><!--div cajafooter-->
+    </footer>
+    <script src="assets/js/region.js"></script>
+</body>
+
+</html>
